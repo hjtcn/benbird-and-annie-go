@@ -6,6 +6,19 @@ import (
 )
 
 func TestFmt(t *testing.T)  {
+	var inter rune  = 123
+	var str []rune = []rune{'中', '国'}
+	var str_two []byte = []byte{101, 64, 65, 66}
+	fmt.Println(str)
+
+	fmt.Printf("%s: \n", str_two)
+
+	fmt.Printf("%v\n", inter)
+	fmt.Printf("%+v\n", inter)
+	fmt.Printf("%#v\n", inter)
+	fmt.Printf("%T\n", inter)
+	fmt.Printf("%d%%\n", inter) //%%并非占位符，只是对%转义 输出10%
+
 	one := 160
 	/**整数格式化**/
 	fmt.Printf("二进制表示：%b\n", one)
