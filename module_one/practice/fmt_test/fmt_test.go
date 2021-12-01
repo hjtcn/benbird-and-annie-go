@@ -2,29 +2,12 @@ package fmt_test
 
 import (
 	"fmt"
-	"os"
 	"testing"
 )
 
 const pai = 3.14
 
 func TestFmt(t *testing.T) {
-
-	var r_one float64
-	var r_two float64
-
-	fmt.Println("输入第一个圆的半径")
-	fmt.Scan(&r_one)
-
-	fmt.Println("输入第二个圆的半径")
-	fmt.Scan(&r_two)
-
-	fmt.Println("两圆面积和:", r_one * r_one * pai + r_two * r_two * pai)
-
-	os.Exit(1)
-
-
-
 	var inter rune = 123
 	var str []rune = []rune{'中', '国'}
 	var str_two []byte = []byte{101, 64, 65, 66}
@@ -50,5 +33,10 @@ func TestFmt(t *testing.T) {
 	fmt.Printf("单引号括起来的go语法字符字面值：%q\n", one)
 	//Unicode格式，貌似为U+16进制的表示的数字
 	fmt.Printf("Unicode格式(U+000F)：%U\n", one)
+
+	large_num := 123000000.345
+
+	//fmt.Printf("%p", large_num)
+	fmt.Printf("%b %e %E %f %F %g %G", large_num, large_num, large_num, large_num, large_num, large_num, large_num)
 
 }
