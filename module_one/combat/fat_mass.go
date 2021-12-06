@@ -22,13 +22,13 @@ func suggest(fatRateMsg string) string {
 }
 
 func main() {
-	var weight float64 = 70.5
-	var tall float64 = 1.65
+	var weight float64 = 58
+	var tall float64 = 1.63
 	var bmi float64 = weight / (tall * tall)
 
-	var age int = 26
+	var age int = 24
 	var sexWeight int
-	var sex string = "男"
+	var sex string = "女"
 
 	if sex == "男" {
 		sexWeight = 1
@@ -37,8 +37,7 @@ func main() {
 	}
 
 	var fatRate float64 = (1.2*bmi + 0.23*float64(age) - 5.4 - 10.8*float64(sexWeight)) / 100
-	fmt.Println((fatRate > 0.16 && fatRate <= 0.21), "体脂率：", fatRate)
-	fmt.Println(fatRate > 0.26, "体脂率：", fatRate)
+	fmt.Println("我的体脂率:", fatRate)
 
 	fatRateMsg := "没什么建议"
 	if sexWeight == 1 {
@@ -52,7 +51,6 @@ func main() {
 			} else if fatRate <= 0.21 {
 				fatRateMsg = "偏重"
 			} else if fatRate <= 0.26 {
-				fmt.Println("gagaga")
 				fatRateMsg = "肥胖"
 			} else {
 				fatRateMsg = "严重肥胖"
@@ -60,29 +58,29 @@ func main() {
 		} else if age <= 59 {
 			if fatRate < 0 {
 				fatRateMsg = "体脂率有误"
-			} else if fatRate <= 0.1 {
+			} else if fatRate <= 0.11 {
 				fatRateMsg = "偏瘦"
-			} else if fatRate <= 0.16 {
+			} else if fatRate <= 0.17 {
 				fatRateMsg = "标准"
-			} else if fatRate <= 0.21 {
+			} else if fatRate <= 0.22 {
 				fatRateMsg = "偏重"
-			} else if fatRate <= 0.26 {
+			} else if fatRate <= 0.27 {
 				fatRateMsg = "肥胖"
-			} else if fatRate > 0.26 {
+			} else {
 				fatRateMsg = "严重肥胖"
 			}
 		} else if age >= 60 {
 			if fatRate < 0 {
 				fatRateMsg = "体脂率有误"
-			} else if fatRate <= 0.1 {
+			} else if fatRate <= 0.13 {
 				fatRateMsg = "偏瘦"
-			} else if fatRate <= 0.16 {
+			} else if fatRate <= 0.19 {
 				fatRateMsg = "标准"
-			} else if fatRate <= 0.21 {
+			} else if fatRate <= 0.24 {
 				fatRateMsg = "偏重"
-			} else if fatRate <= 0.26 {
+			} else if fatRate <= 0.29 {
 				fatRateMsg = "肥胖"
-			} else if fatRate > 0.26 {
+			} else {
 				fatRateMsg = "严重肥胖"
 			}
 		}
@@ -90,43 +88,43 @@ func main() {
 		if age >= 18 && age <= 39 {
 			if fatRate < 0 {
 				fatRateMsg = "体脂率有误"
-			} else if fatRate <= 0.1 {
+			} else if fatRate <= 0.2 {
 				fatRateMsg = "偏瘦"
-			} else if fatRate <= 0.16 {
+			} else if fatRate <= 0.27 {
 				fatRateMsg = "标准"
-			} else if fatRate <= 0.21 {
+			} else if fatRate <= 0.34 {
 				fatRateMsg = "偏重"
-			} else if fatRate <= 0.26 {
+			} else if fatRate <= 0.39 {
 				fatRateMsg = "肥胖"
-			} else if fatRate > 0.26 {
+			} else {
 				fatRateMsg = "严重肥胖"
 			}
 		} else if age <= 59 {
 			if fatRate < 0 {
 				fatRateMsg = "体脂率有误"
-			} else if fatRate <= 0.1 {
-				fatRateMsg = "偏瘦"
-			} else if fatRate <= 0.16 {
-				fatRateMsg = "标准"
 			} else if fatRate <= 0.21 {
+				fatRateMsg = "偏瘦"
+			} else if fatRate <= 0.28 {
+				fatRateMsg = "标准"
+			} else if fatRate <= 0.35 {
 				fatRateMsg = "偏重"
-			} else if fatRate <= 0.26 {
+			} else if fatRate <= 0.4 {
 				fatRateMsg = "肥胖"
-			} else if fatRate > 0.26 {
+			} else {
 				fatRateMsg = "严重肥胖"
 			}
 		} else if age >= 60 {
 			if fatRate < 0 {
 				fatRateMsg = "体脂率有误"
-			} else if fatRate <= 0.1 {
+			} else if fatRate <= 0.22 {
 				fatRateMsg = "偏瘦"
-			} else if fatRate <= 0.16 {
+			} else if fatRate <= 0.29 {
 				fatRateMsg = "标准"
-			} else if fatRate <= 0.21 {
+			} else if fatRate <= 0.36 {
 				fatRateMsg = "偏重"
-			} else if fatRate <= 0.26 {
+			} else if fatRate <= 0.41 {
 				fatRateMsg = "肥胖"
-			} else if fatRate > 0.26 {
+			} else {
 				fatRateMsg = "严重肥胖"
 			}
 		}
