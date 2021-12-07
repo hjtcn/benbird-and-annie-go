@@ -180,6 +180,8 @@ func main() {
 			fmt.Printf("%s, 你的体脂率是%.2f, %s\n", names[i], fatRates[i], suggestInfos[i])
 		}
 
+		fmt.Printf("平均体脂率为是%.2f", (fatRates[0] + fatRates[1] + fatRates[2]) / 3)
+
 		var goOn string
 		fmt.Println("")
 		fmt.Print("请问您是否还要继续计算体脂率(yes/no): ")
