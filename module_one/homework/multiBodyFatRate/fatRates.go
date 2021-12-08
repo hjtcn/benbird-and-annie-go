@@ -197,7 +197,6 @@ func main() {
 			err_num++
 		}
 
-		goOn = "no"
 		if goOn == "no" {
 			break
 		}
