@@ -1,8 +1,10 @@
 package main
 
-import (
-	"fmt"
-)
+import "fmt"
+
+/**
+计算多人体脂率
+ */
 
 func getSexWeight(sex string) int {
 	if sex == "男" {
