@@ -1,4 +1,4 @@
-package main
+package refactorFatRate
 
 import "fmt"
 
@@ -136,19 +136,7 @@ func getFatRateResult(fatRate float64, age, sexWeight int) string {
 	return fatRateMsg
 }
 
-func main() {
-	for {
-		mainFatRateBody()
-
-		if cont := whetherContinue(); !cont {
-			break
-		}
-	}
-
-	fmt.Println("已退出体脂计算！\n")
-}
-
-func mainFatRateBody() {
+func MainFatRateBody() {
 	person_num := 3
 	fmt.Println("支持计算", person_num, "个人的体脂率哟")
 
@@ -201,7 +189,7 @@ func getPersonInfo(person_num int) ([]string, []int, []string, []float64, []floa
 	return names, ages, sexs, talls, weights
 }
 
-func whetherContinue() bool {
+func WhetherContinue() bool {
 	var goOn string
 	fmt.Println("")
 	fmt.Print("请问您是否还要继续计算体脂率(yes/no): ")
