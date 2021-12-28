@@ -1,7 +1,7 @@
 package main
 
 import (
-	fatRate "benbird-and-annie-go/module_two/practice/refactorFatRate"
+	fatRate "github.com/hjtcn/benbird-and-annie-go/module_two/practice/refactorFatRate"
 	"fmt"
 )
 

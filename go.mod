@@ -1,3 +1,3 @@
-module benbird-and-annie-go
+module github.com/hjtcn/benbird-and-annie-go
 
 go 1.17
