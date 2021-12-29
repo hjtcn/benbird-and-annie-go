@@ -1,8 +1,8 @@
 package main
 
 import (
-	fatRate "github.com/hjtcn/benbird-and-annie-go/module_two/practice/refactorFatRate"
 	"fmt"
+	fatRate "github.com/hjtcn/benbird-and-annie-go/module_two/practice/refactorFatRate"
 )
 
 func main() {
