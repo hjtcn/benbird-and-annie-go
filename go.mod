@@ -11,3 +11,5 @@ require (
 	github.com/inconshreveable/mousetrap v1.0.0 // indirect
 	github.com/spf13/pflag v1.0.5 // indirect
 )
+
+replace github.com/hjtcn/go-base-homework@v0.0.2 => ./module_three/practice/refactorFatRate
