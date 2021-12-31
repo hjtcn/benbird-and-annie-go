@@ -5,6 +5,7 @@ import (
 	"github.com/hjtcn/go-base-homework/fatRate"
 )
 
+//第一次作业
 func main() {
 	for {
 		fatRate.MainFatRateBody()
