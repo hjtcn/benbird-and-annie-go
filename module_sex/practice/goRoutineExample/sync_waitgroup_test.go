@@ -13,11 +13,14 @@ type Runner struct {
 }
 
 func (r Runner) Run(wg *sync.WaitGroup) {
-	fmt.Println(r.Name, "开始跑")
+	defer wg.Done()
+	startTime := time.Now()
+	fmt.Println(r.Name, "开始跑", startTime)
 	rand.Seed(time.Now().UnixNano())
 
 	time.Sleep(time.Duration(rand.Uint64()%10) * time.Second)
-	fmt.Println(r.Name, "跑到终点")
+	endTime := time.Now()
+	fmt.Println(r.Name, "跑到终点", endTime.Sub(startTime))
 }
 
 func TestPlaySports(T *testing.T) {
@@ -35,6 +38,9 @@ func TestPlaySports(T *testing.T) {
 	}
 
 	for _, runnerIter := range runners {
-		fmt.Println(runnerIter)
+		go runnerIter.Run(&wg)
 	}
+
+	wg.Wait()
+	fmt.Println("赛跑结束")
 }
