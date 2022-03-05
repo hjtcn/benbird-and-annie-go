@@ -5,7 +5,7 @@ import (
 	"testing"
 )
 
-func TestFor(t *testing.T)  {
+func TestFor(t *testing.T) {
 	var str string = "hello golang"
 
 	for i := 1; i <= 100; i++ {

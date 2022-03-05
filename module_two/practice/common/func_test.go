@@ -22,6 +22,5 @@ func TestFunc(t *testing.T) {
 	arr = append(arr, 2)
 	t.Log(arr, len(arr), cap(arr))
 
-
 	t.Log(arr1, len(arr1), cap(arr1))
 }

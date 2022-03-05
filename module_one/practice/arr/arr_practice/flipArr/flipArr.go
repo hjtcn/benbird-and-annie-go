@@ -2,9 +2,9 @@ package main
 
 import "fmt"
 
-func main()  {
+func main() {
 
-	sourceArr := [...]int{23, 34, 45, 4 ,67, 89, 8}
+	sourceArr := [...]int{23, 34, 45, 4, 67, 89, 8}
 	arrLen := len(sourceArr)
 
 	if arrLen >= 1 {

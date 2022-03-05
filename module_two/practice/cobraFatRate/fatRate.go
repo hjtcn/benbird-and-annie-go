@@ -30,11 +30,11 @@ func main() {
 		weight float64
 		age    int
 	)
-	
+
 	cmd := &cobra.Command{
-		Use: "fatTate",
+		Use:   "fatTate",
 		Short: "计算个人体脂",
-		Long: "",
+		Long:  "",
 		Run: func(cmd *cobra.Command, args []string) {
 			//获取信息
 			fmt.Println("name: ", name)

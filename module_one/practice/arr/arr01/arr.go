@@ -45,7 +45,7 @@ func main() {
 		}
 	}
 
-	sourceArr := []int{23, 34, 45, 4 ,67, 89, 8}
+	sourceArr := []int{23, 34, 45, 4, 67, 89, 8}
 
 	arr := flipArr(sourceArr)
 	fmt.Println(arr)

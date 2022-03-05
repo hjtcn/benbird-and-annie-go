@@ -2,7 +2,7 @@ package scope
 
 import "testing"
 
-func TestScope(t *testing.T)  {
+func TestScope(t *testing.T) {
 	tall, weight := 1.7, 1.7
 	t.Log(tall, weight)
 }
@@ -27,4 +27,4 @@ func giveRes() int {
 
 全局变量
 局部变量
- */
+*/

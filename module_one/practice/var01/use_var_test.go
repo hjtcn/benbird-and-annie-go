@@ -5,12 +5,12 @@ import (
 	"testing"
 )
 
-func TestUseVar(t *testing.T)  {
+func TestUseVar(t *testing.T) {
 	var hen int = 4
 	var shu int = 5
 	fmt.Println(hen * shu)
 
-	var mianji = hen *shu
+	var mianji = hen * shu
 	fmt.Println(mianji)
 
 	/* 不允许的操作，变量类型不同，不能进行运算

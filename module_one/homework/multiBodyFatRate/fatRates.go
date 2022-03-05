@@ -4,7 +4,7 @@ import "fmt"
 
 /**
 计算多人体脂率
- */
+*/
 
 func getSexWeight(sex string) int {
 	if sex == "男" {
@@ -182,7 +182,7 @@ func main() {
 			fmt.Printf("%s, 你的体脂率是%.2f, %s\n", names[i], fatRates[i], suggestInfos[i])
 		}
 
-		fmt.Printf("平均体脂率为是%.2f", (fatRates[0] + fatRates[1] + fatRates[2]) / 3)
+		fmt.Printf("平均体脂率为是%.2f", (fatRates[0]+fatRates[1]+fatRates[2])/3)
 
 		var goOn string
 		fmt.Println("")
@@ -209,4 +209,4 @@ func main() {
 
 /**
 目前只能计算固定的三人体脂，用户体验不是太好，入参没有做严格的校验
- */
+*/

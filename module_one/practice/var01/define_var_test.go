@@ -5,7 +5,7 @@ import (
 	"testing"
 )
 
-func TestVar(t *testing.T)  {
+func TestVar(t *testing.T) {
 	var hello string = "hello world"
 	fmt.Println(hello)
 

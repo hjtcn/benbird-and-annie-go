@@ -1,7 +1,7 @@
 package main
 
-func main()  {
-	
+func main() {
+
 }
 
 /**
@@ -10,4 +10,4 @@ func main()  {
 函数可以赋值给变量
 初始化函数 init() main函数运行之前，自动运行，不需要手动调用
 同一文件能否创建同名函数，
- */
+*/

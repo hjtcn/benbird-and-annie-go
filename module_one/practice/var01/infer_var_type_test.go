@@ -7,7 +7,7 @@ import (
 	"testing"
 )
 
-func TestInterVarType(t *testing.T)  {
+func TestInterVarType(t *testing.T) {
 	a1 := "hello"
 	fmt.Println(reflect.TypeOf(a1))
 
@@ -29,6 +29,6 @@ func TestInterVarType(t *testing.T)  {
 	var a7 int = int(a6)
 	fmt.Println(a6, a7)
 
-	var a8 uint = 1 << 64 - 1
+	var a8 uint = 1<<64 - 1
 	fmt.Println(a8)
 }

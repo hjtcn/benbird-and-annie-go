@@ -2,5 +2,5 @@ package debug
 
 import "testing"
 
-func TestDebug(t *testing.T)  {
+func TestDebug(t *testing.T) {
 }

@@ -33,7 +33,7 @@ func switchUseMoney(money interface{}) string {
 	}
 }
 
-func useFallthrouth(money int)  {
+func useFallthrouth(money int) {
 	switch {
 	case money >= 0 && money <= 20:
 		fmt.Println("点外卖")
@@ -47,7 +47,7 @@ func useFallthrouth(money int)  {
 	}
 }
 
-func main()  {
+func main() {
 	var money int = 200
 	fmt.Println(howUseMoney(money))
 

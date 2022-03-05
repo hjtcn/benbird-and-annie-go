@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package apis;
+option go_package = "../apis";
+
+message PersonalInfoList {
+  repeated PersonalInfo items = 1;
+}
+
+message PersonalInfo {
+  // @gotags: gorm:"column:name"
+  string name = 1;
+  // @gotags: gorm:"column:sex"
+  string sex = 2;
+  // @gotags: gorm:"column:tall"
+  string tall = 3;
+  // @gotags: gorm:"column:weight"
+  float weight = 4;
+  // @gotags: gorm:"column:age"
+  int64 age = 5;
+}

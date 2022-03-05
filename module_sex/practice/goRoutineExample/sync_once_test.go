@@ -7,4 +7,5 @@ type Rank struct {
 func init() {
 
 }
+
 //生产100个就退出
